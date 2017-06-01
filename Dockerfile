@@ -1,4 +1,6 @@
-FROM garethjevans/jenkinsslave:v1.2.3-alpine
+FROM garethjevans/jenkinsslave-maven:v1.4.6-alpine
+
+USER root
 
 RUN apk update && \
     apk add bzr tree git go build-base && \
